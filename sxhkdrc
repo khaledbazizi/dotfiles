@@ -1,0 +1,28 @@
+# add window to a group
+alt + shift + {1,2,3,4,5}
+    groaw -d all; \
+    groaw -a {1,2,3,4,5}
+
+# toggle groups' visibility
+alt + {1,2,3,4,5}
+    groaw -t {1,2,3,4,5}
+
+# cycle through windows
+alt + {j,k} 
+    vroum {next, prev}
+
+# set window fullscreen
+alt + shift + f 
+    maximize $(pfw)
+
+alt + p 
+    dmenu_run -fn "monospace:size=19"
+
+alt + shift + Return
+         st -f "monospace:size=19"
+
+alt + shift + d 
+    tile
+
+alt + shift + c 
+    killw $(pfw)
